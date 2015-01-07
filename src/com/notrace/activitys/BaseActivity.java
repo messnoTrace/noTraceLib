@@ -8,7 +8,7 @@ import com.notrace.R;
 import com.notrace.utils.AnimotionUtils;
 import com.notrace.utils.AppManager;
 
-public class BaseActivity extends Activity {
+public abstract class BaseActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +29,14 @@ public class BaseActivity extends Activity {
 		AnimotionUtils.outFromLeft(this);
 		AppManager.removeActivity(this);
 	}
+	
+	//set layout
+	public abstract void setView();
 
+	
+	//bind listener
+	public abstract void bindListener();
+	
+	//init compounent
+	public abstract void initView();
 }
