@@ -1,2 +1,4 @@
 noTraceLib
+
+test
 ==========
