@@ -13,14 +13,52 @@ public final class R {
         public static final int anim_exit=0x7f040001;
         public static final int back_enter=0x7f040002;
         public static final int back_exit=0x7f040003;
-        public static final int push_bottom_out=0x7f040004;
-        public static final int push_left_in=0x7f040005;
-        public static final int push_left_out=0x7f040006;
-        public static final int push_right_in=0x7f040007;
-        public static final int push_right_out=0x7f040008;
-        public static final int push_up_in=0x7f040009;
+        public static final int push_bottom_in=0x7f040004;
+        public static final int push_bottom_out=0x7f040005;
+        public static final int push_left_in=0x7f040006;
+        public static final int push_left_out=0x7f040007;
+        public static final int push_right_in=0x7f040008;
+        public static final int push_right_out=0x7f040009;
+        public static final int push_up_in=0x7f04000a;
     }
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f01000a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_end=0x7f01000c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_start=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f010009;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -120,20 +158,40 @@ containing a value of this type.
         public static final int standard_padding=0x7f050002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int share_via_barcode=0x7f020001;
+        public static final int camera_button_scale=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int item_default=0x7f020002;
+        public static final int kuang=0x7f020003;
+        public static final int share_via_barcode=0x7f020004;
     }
     public static final class id {
+        public static final int CropImageView=0x7f090005;
+        public static final int CropOverlayView=0x7f09000c;
         public static final int FILL=0x7f090000;
+        public static final int ImageView_image=0x7f09000b;
         public static final int STROKE=0x7f090001;
-        public static final int action_settings=0x7f090004;
-        public static final int button=0x7f090003;
+        public static final int action_settings=0x7f090011;
+        public static final int btn_cancel=0x7f090010;
+        public static final int btn_pick_photo=0x7f09000f;
+        public static final int btn_take_photo=0x7f09000e;
+        public static final int button=0x7f09000a;
+        public static final int civ=0x7f090004;
         public static final int container=0x7f090002;
+        public static final int main=0x7f090003;
+        public static final int pop_layout=0x7f09000d;
+        public static final int rl_image=0x7f090007;
+        public static final int tv_canle=0x7f090006;
+        public static final int tv_crop=0x7f090009;
+        public static final int tv_ok=0x7f090008;
     }
     public static final class layout {
         public static final int activity_base=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_zxing_demo=0x7f030002;
+        public static final int activity_choosepic=0x7f030001;
+        public static final int activity_image_crop=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_zxing_demo=0x7f030004;
+        public static final int crop_image_view=0x7f030005;
+        public static final int layout_choosepicturepopwindow=0x7f030006;
     }
     public static final class menu {
         public static final int base=0x7f080000;
@@ -277,6 +335,7 @@ containing a value of this type.
         public static final int wifi_type_label=0x7f060081;
     }
     public static final class style {
+        public static final int AnimBottom=0x7f070004;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -309,6 +368,86 @@ containing a value of this type.
         public static final int PushFromRight=0x7f070002;
     }
     public static final class styleable {
+        /**  自定义圆形图片参数 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_border_color com.notrace:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_end com.notrace:border_end}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_start com.notrace:border_start}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_width com.notrace:border_width}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_border_color
+           @see #CircleImageView_border_end
+           @see #CircleImageView_border_start
+           @see #CircleImageView_border_width
+         */
+        public static final int[] CircleImageView = {
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.notrace.R.attr#border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.notrace:border_color
+        */
+        public static final int CircleImageView_border_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.notrace.R.attr#border_end}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.notrace:border_end
+        */
+        public static final int CircleImageView_border_end = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.notrace.R.attr#border_start}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.notrace:border_start
+        */
+        public static final int CircleImageView_border_start = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.notrace.R.attr#border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.notrace:border_width
+        */
+        public static final int CircleImageView_border_width = 0;
         /**  can rotate textview 
            <p>Includes the following attributes:</p>
            <table>
