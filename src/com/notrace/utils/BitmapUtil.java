@@ -802,7 +802,5 @@ public class BitmapUtil {
 
 		}
 		
-
-
 	
 }
