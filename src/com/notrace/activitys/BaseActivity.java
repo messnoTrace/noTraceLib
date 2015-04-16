@@ -14,7 +14,8 @@ public abstract class BaseActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_base);
-		AppManager.addActivity(this);
+//		AppManager.addActivity(this);
+
 	}
 
 	@Override
@@ -27,11 +28,11 @@ public abstract class BaseActivity extends Activity {
 	public void finish() {
 		super.finish();
 		AnimotionUtils.outFromLeft(this);
-		AppManager.removeActivity(this);
+//		AppManager.removeActivity(this);
 	}
 	
 	//set layout
-	public abstract void setView();
+	public abstract void findViews();
 
 	
 	//bind listener
@@ -39,4 +40,6 @@ public abstract class BaseActivity extends Activity {
 	
 	//init compounent
 	public abstract void initView();
+	
+	public abstract void initData();
 }

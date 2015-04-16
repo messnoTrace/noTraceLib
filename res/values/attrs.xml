@@ -22,5 +22,14 @@
             <enum name="FILL" value="1"></enum>
         </attr>
     </declare-styleable>
+    
+    
+      <!-- 自定义圆形图片参数 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_start" format="color" />
+        <attr name="border_end" format="color" />
+    </declare-styleable>
 
 </resources>
