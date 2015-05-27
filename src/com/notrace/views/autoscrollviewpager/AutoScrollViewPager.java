@@ -66,7 +66,7 @@ public class AutoScrollViewPager extends ViewPager {
     private Handler                handler;
     private boolean                isAutoScroll                = false;
     private boolean                isStopByTouch               = false;
-    private float                  touchX                      = 0f, downX = 0f;
+    private float                  touchX                      = 0f, downX = 0f,downY=0;
     private CustomDurationScroller scroller                    = null;
 
     public static final int        SCROLL_WHAT                 = 0;
@@ -221,6 +221,30 @@ public class AutoScrollViewPager extends ViewPager {
             }
         }
         getParent().requestDisallowInterceptTouchEvent(true);
+        
+        
+        
+        //添加此部分代码可以向下拉动个viewpager
+
+        switch (action) {
+            case MotionEvent.ACTION_DOWN:
+                downX = ev.getX();
+                downY = ev.getY();
+                getParent().requestDisallowInterceptTouchEvent(true);
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (Math.abs(ev.getX() - downX) > Math.abs(ev.getY() - downY))
+                    getParent().requestDisallowInterceptTouchEvent(true);
+                else
+                    getParent().requestDisallowInterceptTouchEvent(false);
+                break;
+            case MotionEvent.ACTION_UP:
+                break;
+            case MotionEvent.ACTION_CANCEL:
+                getParent().requestDisallowInterceptTouchEvent(false);
+                break;
+        }
+        //结束
 
         return super.dispatchTouchEvent(ev);
     }
