@@ -31,5 +31,13 @@
         <attr name="border_start" format="color" />
         <attr name="border_end" format="color" />
     </declare-styleable>
+    
+     <declare-styleable name="DeleteEdittext">
+        <attr name="text_hint" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="bg_color" format="color" />
+        <attr name="inputtype" format="integer"></attr>
+    </declare-styleable>
 
 </resources>
