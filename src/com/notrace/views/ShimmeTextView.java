@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 /**
  * 
- *
+ *http://blog.csdn.net/xu_fu/article/details/24484019
  */
 public class ShimmeTextView extends TextView {  
   
