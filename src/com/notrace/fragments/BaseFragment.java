@@ -60,14 +60,15 @@ public  abstract  class BaseFragment extends Fragment {
 
     @SuppressWarnings("unchecked")
     public <T extends View> T findView(View viewParent,int resId) {
-        if (getView() == null)
-            return null;
-//        View view = getView().findViewById(resId);
-        View view = viewParent.findViewById(resId);
-        if (view == null)
-            throw new NullPointerException(
-                    "can't find any view associated with the resId");
-        return (T) view;
+//        if (getView() == null)
+//            return null;
+////        View view = getView().findViewById(resId);
+//        View view = viewParent.findViewById(resId);
+//        if (view == null)
+//            throw new NullPointerException(
+//                    "can't find any view associated with the resId");
+//        return (T) view;
+    	  return (T)viewParent.findViewById(resId);
     }
 
 }
