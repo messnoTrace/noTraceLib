@@ -6,7 +6,7 @@ import android.annotation.SuppressLint;
 *http://blog.csdn.net/maosidiaoxian/article/details/38300627
  * 
  */
-public abstract class LazyFragment extends BaseFragment {
+public abstract class LazyFragment extends BaseFragment{
 	protected boolean isVisible;
 
 	/**
@@ -25,10 +25,9 @@ public abstract class LazyFragment extends BaseFragment {
 	}
 
 	protected void onVisible() {
-		lazyLoad();
+		initData();
 	}
 
-	protected abstract void lazyLoad();
 
 	protected void onInvisible() {
 	};
