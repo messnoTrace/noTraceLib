@@ -148,7 +148,7 @@ public class ChoosePictureDemoActivity extends BaseActivity{
 			if (data != null) {
 				path = data.getStringExtra("path");
 				new ImageUploadTask().execute(path);
-//				ImageLoader.getInstance().displayImage(path, civ);
+				ImageLoader.getInstance().displayImage("file://"+path, civ);
 			}
 		} else if (requestCode == PHOTORESOULT) {// 打开系统相册进行裁剪图片
 			if (data == null) {// 处理返回，取消键被点击报空指针异常

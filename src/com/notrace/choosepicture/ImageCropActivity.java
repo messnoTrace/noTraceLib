@@ -9,7 +9,9 @@ import java.io.IOException;
 
 import com.notrace.R;
 import com.notrace.choosepicture.crop.CropImageView;
+import com.notrace.commom.PathConsts;
 import com.notrace.utils.BitmapUtil;
+import com.notrace.utils.FileDownloadUtil;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -194,8 +196,10 @@ public class ImageCropActivity extends Activity {
 		public String saveBitmap(Bitmap bm) {
 			Long tolong = System.currentTimeMillis()/1000;
 			
-			File f=new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/temp/",tolong.toString());
-//			File f = new File(FileDownloadUtil.getDefaultLocalDir(PathConsts.DIR_TEMP), tolong.toString());
+			
+			//TODO 此处需要用下面的
+//			File f=new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/temp/",tolong.toString());
+			File f = new File(FileDownloadUtil.getDefaultLocalDir(PathConsts.DIR_TEMP), tolong.toString());
 			  if (f.exists()) {
 			   f.delete();
 			  }
