@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -13,7 +14,7 @@ import com.notrace.immersivestatusbar.SystemBarTintManager;
 import com.notrace.utils.AnimotionUtils;
 import com.notrace.utils.AppManager;
 
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends FragmentActivity {
 
 	
 	
