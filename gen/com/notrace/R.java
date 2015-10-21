@@ -287,6 +287,10 @@ containing a value of this type.
     }
     public static final class color {
         public static final int background_tab_pressed=0x7f050000;
+        public static final int green_text=0x7f050002;
+        public static final int grey=0x7f050001;
+        public static final int sms_color=0x7f050004;
+        public static final int white=0x7f050003;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -303,12 +307,15 @@ containing a value of this type.
     }
     public static final class drawable {
         public static final int background_tab=0x7f020000;
-        public static final int camera_button_scale=0x7f020001;
-        public static final int delete=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int item_default=0x7f020004;
-        public static final int kuang=0x7f020005;
-        public static final int share_via_barcode=0x7f020006;
+        public static final int button_sms_bg=0x7f020001;
+        public static final int button_sms_bg_nor=0x7f020002;
+        public static final int button_sms_bg_sel=0x7f020003;
+        public static final int camera_button_scale=0x7f020004;
+        public static final int delete=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int item_default=0x7f020007;
+        public static final int kuang=0x7f020008;
+        public static final int share_via_barcode=0x7f020009;
     }
     public static final class id {
         public static final int CropImageView=0x7f0a0005;
